@@ -1,0 +1,7 @@
+{
+  "**/*.{sass, scss}": "yarn format",
+  "**/*.{vue, js, ts}": [
+    "yarn lint",
+    "yarn format"
+  ]
+}
