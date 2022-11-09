@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import ContentLayout from '../layouts/contentLayout.vue'
-import { t } from 'vui18n'
 </script>
 
 <template>
@@ -10,7 +9,6 @@ import { t } from 'vui18n'
     </template>
     <template #contentBody>
       <p class="test1">this is body</p>
-      <p>{{ t('welcome') }}</p>
     </template>
   </content-layout>
 </template>

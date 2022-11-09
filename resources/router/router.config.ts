@@ -2,7 +2,7 @@ import { RouterConfig } from '@nuxt/schema'
 import Test from '~/presentation/pages/index.vue'
 
 const config: RouterConfig = {
-  routes: (_routes) => [
+  routes: () => [
     {
       path: '/',
       name: 'home',
