@@ -3,10 +3,13 @@ import eslintPlugin from 'vite-plugin-eslint'
 
 
 export default defineNuxtConfig({
+  buildModules: ['@pinia/nuxt'],
   vite: {
     plugins: [eslintPlugin()],
     css: {
       preprocessorOptions: {
+
+
         scss: {
           additionalData: ((files: string[]) =>
               files.reduce((acc: string, cur: string) => acc + `@import "./assets/styles/${cur}.scss";\n`, '')
