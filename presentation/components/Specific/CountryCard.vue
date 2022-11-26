@@ -7,7 +7,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="w-full shadow-md bg-white rounded-lg h-96 cursor-pointer">
+  <div class="w-full shadow-md bg-white rounded-lg cursor-pointer h-full">
     <div class="img-container w-full rounded-t-lg">
       <img
         src="@/assets/images/germany.png"
