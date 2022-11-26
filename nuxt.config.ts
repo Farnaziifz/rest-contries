@@ -19,7 +19,7 @@ export default defineNuxtConfig({
              * make sure you placed that file in ./assets/styles direction
              * and then just put the file name in array below.
              */
-            ['_variables'],
+            ['_variables', 'app'],
           ),
         },
       },
