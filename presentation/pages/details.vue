@@ -3,7 +3,7 @@
     <div class="back-button">
       <button class="shadow-lg py-2 px-6 bg-white rounded-lg">Back</button>
     </div>
-    <div class="details-conatiner mt-14 grid grid-cols-2 gap-10">
+    <div class="details-conatiner mt-14 grid laptop:grid-cols-2 laptop:gap-10 tablet:grid-cols-2 tablet:gap-4 grid-cols-1 gap-2">
       <div class="flag w-full" :style="{ height: '500px' }">
         <img
           src="../../assets/images/germany.png"
@@ -51,26 +51,9 @@
             <span class="text-sm">ljncflr</span>
           </p>
         </div>
-        <div class="flex mt-6 justify-betwen items-center flex-wrap w-full">
+        <div class="flex mt-6 items-center flex-wrap w-full">
           <p>Border Countries:</p>
-          <button class="shadow-md py-2 px-6 bg-white rounded-lg mx-2 mb-2">
-            Back
-          </button>
-          <button class="shadow-md py-2 px-6 bg-white rounded-lg mx-2 mb-2">
-            Back
-          </button>
-          <button class="shadow-md py-2 px-6 bg-white rounded-lg mx-2 mb-2">
-            Back
-          </button>
-          <button class="shadow-md py-2 px-6 bg-white rounded-lg mx-2 mb-2">
-            Back
-          </button>
-          <button class="shadow-md py-2 px-6 bg-white rounded-lg mx-2 mb-2">
-            Back
-          </button>
-          <button class="shadow-md py-2 px-6 bg-white rounded-lg mx-2 mb-2">
-            Back
-          </button>
+          <div class="shadow-md py-1 px-4 bg-white rounded mx-2">Back</div>
         </div>
       </div>
     </div>
