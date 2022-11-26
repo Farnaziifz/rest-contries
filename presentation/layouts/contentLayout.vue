@@ -1,5 +1,7 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import headerLayout from './headerLayout.vue'
+</script>
 <template>
-  <slot name="contentTitle" />
+  <headerLayout />
   <slot name="contentBody" />
 </template>

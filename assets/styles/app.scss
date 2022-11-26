@@ -1,7 +1,7 @@
-@font-face {
-  font-family: 'dana-regular';
-  src: url('~/assets/fonts/Dana-FaNum-Regular.ttf');
-}
+// @font-face {
+//   font-family: 'dana-regular';
+//   src: url('~/assets/fonts/Dana-FaNum-Regular.ttf');
+// }
 
 * {
   margin: 0;
@@ -9,10 +9,8 @@
   box-sizing: border-box;
 }
 
-body {
-  direction: rtl;
-  font-family: 'dana-regular';
-}
+// body {
+// }
 
 @tailwind base;
 
