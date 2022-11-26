@@ -1,12 +1,27 @@
 import { RouterConfig } from '@nuxt/schema'
-import Test from '~/presentation/pages/index.vue'
+import mainLayout from '@/presentation/layouts/contentLayout.vue'
+import Home from '@/presentation/pages/index.vue'
+import Details from '@/presentation/pages/details.vue'
 
 const config: RouterConfig = {
   routes: () => [
     {
       path: '/',
-      name: 'home',
-      component: Test,
+      name: 'layout',
+      component: mainLayout,
+      redirect: '/',
+      children: [
+        {
+          path: '/',
+          name: 'home',
+          component: Home,
+        },
+        {
+          path: '/details/:id',
+          name: 'details',
+          component: Details,
+        },
+      ],
     },
   ],
 }

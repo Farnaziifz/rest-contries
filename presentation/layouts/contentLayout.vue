@@ -3,5 +3,5 @@ import headerLayout from './headerLayout.vue'
 </script>
 <template>
   <headerLayout />
-  <slot name="contentBody" />
+  <NuxtPage />
 </template>

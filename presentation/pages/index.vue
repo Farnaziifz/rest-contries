@@ -1,16 +1,21 @@
 <script setup lang="ts">
-import ContentLayout from '../layouts/contentLayout.vue'
+import CountryCard from '@/presentation/components/Specific/CountryCard.vue'
 </script>
 
 <template>
-  <content-layout>
-    <template #contentTitle>
-      <h1>this is title</h1>
-    </template>
-    <template #contentBody>
-      <p class="test1">this is body</p>
-    </template>
-  </content-layout>
+  <div class="container py-10">
+    <div class="search-bar">dewcwe</div>
+    <div class="card-container mt-8 grid grid-cols-4 gap-4">
+      <CountryCard
+        :cardData="{
+          name: 'germany',
+          Population: '234423423',
+          region: 'res',
+          Capital: 'Berlin',
+        }"
+      />
+    </div>
+  </div>
 </template>
 
 <style lang="scss">
