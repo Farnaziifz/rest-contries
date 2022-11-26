@@ -1,6 +1,7 @@
 import axios from 'axios'
 
 export const api = axios.create({
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   baseURL: import.meta.env.VITE_APP_BASEURL,
   timeout: 5000,
