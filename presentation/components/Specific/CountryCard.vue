@@ -10,7 +10,7 @@ const props = defineProps({
   <div class="w-full shadow-md bg-white rounded-lg cursor-pointer h-full">
     <div class="img-container w-full rounded-t-lg">
       <img
-        src="@/assets/images/germany.png"
+        :src="props.cardData?.flag"
         alt=""
         class="w-full rounded-t-lg"
       />

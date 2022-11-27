@@ -17,7 +17,7 @@ const config: RouterConfig = {
           component: Home,
         },
         {
-          path: '/details/:id',
+          path: '/details/:name',
           name: 'details',
           component: Details,
         },

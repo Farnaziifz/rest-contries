@@ -2,23 +2,17 @@
 import CountryCard from '@/presentation/components/Specific/CountryCard.vue'
 import BaseInput from '@/presentation/components/shared/BaseInput.vue'
 import { getCountryList } from '~~/logics/specific/country.handler'
-import { ref, onBeforeMount } from 'vue'
+import { ref, onBeforeMount, Ref } from 'vue'
+import { countryList } from '@/core/types/country'
 const search = (value: string) => {
   console.log(value)
 }
 
-const data = ref({
-  items: [],
-  hasNextPage: false,
-  hasPreviousPage: false,
-  page: 0,
-  totalCount: 0,
-  totalPages: 0,
-})
+const data: Ref<countryList> = ref([])
 
 onBeforeMount(async () => {
   data.value = await getCountryList()
-  console.log(data.value)
+  console.log(typeof data.value)
 })
 </script>
 
@@ -36,10 +30,11 @@ onBeforeMount(async () => {
         v-for="item in data"
         :key="item.population"
         :card-data="{
-          name: 'germany',
-          Population: '234423423',
-          region: 'res',
-          Capital: 'Berlin',
+          name: item.name,
+          Population: item.population,
+          region: item.region,
+          Capital: item.capital,
+          flag: item.flag,
         }"
       />
     </div>
