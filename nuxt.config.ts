@@ -2,8 +2,8 @@ import { defineNuxtConfig } from 'nuxt/config'
 import eslintPlugin from 'vite-plugin-eslint'
 
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss'],
-  buildModules: ['@pinia/nuxt'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode'],
+  buildModules: ['@pinia/nuxt', '@nuxtjs/color-mode'],
   vite: {
     plugins: [eslintPlugin()],
     css: {
@@ -26,4 +26,5 @@ export default defineNuxtConfig({
       },
     },
   },
+
 })
